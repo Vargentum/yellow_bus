@@ -237,6 +237,7 @@ body {
 .b-primeNav{
   @include border-1-solid(left);
   @include border-1-solid(right);
+  .no-flexbox & .unit{padding:0 15px;}
   ul{
     @include flexList;
     padding:15px 10px;
@@ -246,12 +247,11 @@ body {
     text-align: center;
     font-size: 16px;
     text-decoration: none;
-    &.active{
+    &.active,&:hover,&:focus{
+      outline: none;
       background-color: $attentionColor;
       @include link-simple-colors($baseFontColor, $baseFontColor);
-      //&:hover,&:focus{@include scale(none);}
     }
-    &:not([class~=active]){@include hover-scale;}
   }
 }
 
@@ -376,7 +376,7 @@ body {
   .unit__image{width:100%;}
   .unit__header{@include jList; display: block;margin:5px 0;}
   .unit__time{color:$servColor;}
-  .unit__name{}
+  .unit__name{font-weight: bold; color:$servColor;}
   .unit__description{
     &:after{
       content: '»';

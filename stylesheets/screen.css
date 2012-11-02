@@ -892,6 +892,10 @@ body {
   border-right: 1px solid #e5e5e5;
 }
 /* line 240, ../sass/screen.scss */
+.no-flexbox .b-primeNav .unit {
+  padding: 0 15px;
+}
+/* line 241, ../sass/screen.scss */
 .b-primeNav ul {
   padding: 15px 10px;
 }
@@ -943,41 +947,34 @@ body {
   line-height: 1.4;
   font-size: 12px;
 }
-/* line 244, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .b-primeNav .unit {
   display: block;
   text-align: center;
   font-size: 16px;
   text-decoration: none;
 }
-/* line 249, ../sass/screen.scss */
-.b-primeNav .unit.active {
+/* line 250, ../sass/screen.scss */
+.b-primeNav .unit.active, .b-primeNav .unit:hover, .b-primeNav .unit:focus {
+  outline: none;
   background-color: #fcd804;
   color: #484346;
 }
 /* line 18, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.b-primeNav .unit.active:visited {
+.b-primeNav .unit.active:visited, .b-primeNav .unit:hover:visited, .b-primeNav .unit:focus:visited {
   color: #484346;
 }
 /* line 21, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.b-primeNav .unit.active:focus {
+.b-primeNav .unit.active:focus, .b-primeNav .unit:hover:focus, .b-primeNav .unit:focus:focus {
   color: #484346;
 }
 /* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.b-primeNav .unit.active:hover {
+.b-primeNav .unit.active:hover, .b-primeNav .unit:hover:hover, .b-primeNav .unit:focus:hover {
   color: #484346;
 }
 /* line 27, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.b-primeNav .unit.active:active {
+.b-primeNav .unit.active:active, .b-primeNav .unit:hover:active, .b-primeNav .unit:focus:active {
   color: #484346;
-}
-/* line 152, ../sass/screen.scss */
-.b-primeNav .unit:not([class~=active]):hover, .b-primeNav .unit:not([class~=active]):focus {
-  -webkit-transform: scale(1.25, 1.25);
-  -moz-transform: scale(1.25, 1.25);
-  -ms-transform: scale(1.25, 1.25);
-  -o-transform: scale(1.25, 1.25);
-  transform: scale(1.25, 1.25);
 }
 
 /* line 261, ../sass/screen.scss */
@@ -1334,6 +1331,11 @@ body {
 }
 /* line 378, ../sass/screen.scss */
 .page-index__news .unit__time {
+  color: #a4a6a5;
+}
+/* line 379, ../sass/screen.scss */
+.page-index__news .unit__name {
+  font-weight: bold;
   color: #a4a6a5;
 }
 /* line 381, ../sass/screen.scss */
