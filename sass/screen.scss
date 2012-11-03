@@ -235,23 +235,27 @@ body {
   }
 }
 .b-primeNav{
-  @include border-1-solid(left);
-  @include border-1-solid(right);
-  .no-flexbox & .unit{padding:0 15px;}
+  @include border-1-solid(top);
+  .no-flexbox & .unit>a{padding:0 15px;}
   ul{
     @include flexList;
     padding:15px 10px;
   }
-  .unit{
+  .unit>a{
     display: block;
     text-align: center;
     font-size: 16px;
     text-decoration: none;
-    &.active,&:hover,&:focus{
+    &:hover,&:focus{
       outline: none;
       background-color: $attentionColor;
       @include link-simple-colors($baseFontColor, $baseFontColor);
     }
+  }
+  .unit#current>a{
+    outline: none;
+    background-color: $attentionColor;
+    @include link-simple-colors($baseFontColor, $baseFontColor);
   }
 }
 
@@ -374,9 +378,17 @@ body {
   .content{@include jList;}
   .unit{width:170px; text-decoration: none; vertical-align: top;}
   .unit__image{width:100%;}
-  .unit__header{@include jList; display: block;margin:5px 0;}
-  .unit__time{color:$servColor;}
-  .unit__name{font-weight: bold; color:$servColor;}
+  .unit__header{}
+  .unit__time{
+    color:$servColor; display: block;
+    line-height: 1.6;
+  }
+  .unit__name{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; color:$servColor;
+    line-height: 1.1;
+  }
   .unit__description{
     &:after{
       content: '»';
@@ -420,10 +432,8 @@ body {
     }
   }
 }
-/*SOME page specific elements styles
-------------------------------------------------------------------------------------------------*/
-/*SOME page specific elements styles
-------------------------------------------------------------------------------------------------*/
+
+.b-vidget{outline: 1px solid #000; text-align: center; height: 150px; margin:25px 0;}
 /*PLUGINS styles
 ------------------------------------------------------------------------------------------------*/
 /* Basic jQuery Slider essential styles */

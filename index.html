@@ -50,15 +50,15 @@
     <!--prime navigation-->
     <nav class="b-primeNav" itemscope itemtype='http://schema.org/SiteNavigationElement'>
       <ul>
-        <li><a href="#" class="unit active">новости</a></li>
-        <li><a href="#" class="unit">аналитика</a></li>
-        <li><a href="#" class="unit">предпочтения</a></li>
-        <li><a href="#" class="unit">маркетинг микс</a></li>
-        <li><a href="#" class="unit">кейсы</a></li>
-        <li><a href="#" class="unit">мастерская</a></li>
-        <li><a href="#" class="unit">вдохновение</a></li>
-        <li><a href="#" class="unit">события</a></li>
-        <li><a href="#" class="unit">сообщества</a></li>
+        <li id="current" class="unit"><a href="#">новости</a></li>
+        <li class="unit"><a href="#">аналитика</a></li>
+        <li class="unit"><a href="#">предпочтения</a></li>
+        <li class="unit"><a href="#">маркетинг микс</a></li>
+        <li class="unit"><a href="#">кейсы</a></li>
+        <li class="unit"><a href="#">мастерская</a></li>
+        <li class="unit"><a href="#">вдохновение</a></li>
+        <li class="unit"><a href="#">события</a></li>
+        <li class="unit"><a href="#">сообщества</a></li>
       </ul>
     </nav>
   </header><!--END HEADER-->
@@ -118,28 +118,22 @@
             <!--one new-->
             <a href="#" class="unit" itemscope itemtype='http://schema.org/NewsArticle'>
               <img src="images/tmp/news-image.png" alt="image" class="unit__image" itemprop='image'>
-              <span class="unit__header">
-                <time class="unit__time" datetime="2012-12-21">21.12.2012</time>
-                <span class="unit__name" itemprop='name'>Название новости</span>
-              </span>
+              <time class="unit__time" datetime="2012-12-21">21.12.2012</time>
+              <span class="unit__name" itemprop='name'>Название новости</span>
               <span class="unit__description" itemporp='name'>И чем мобайл для рекламщика отличается от мобайла для gродавца детских игрушек</span>
             </a>
             <!--one new-->
             <a href="#" class="unit" itemscope itemtype='http://schema.org/NewsArticle'>
               <img src="images/tmp/news-image.png" alt="image" class="unit__image" itemprop='image'>
-              <span class="unit__header">
-                <time class="unit__time" datetime="2012-12-21">21.12.2012</time>
-                <span class="unit__name" itemprop='name'>А если текста будет много, то как выравнивать?</span>
-              </span>
+              <time class="unit__time" datetime="2012-12-21">21.12.2012</time>
+              <span class="unit__name" itemprop='name'>А если текста будет много, то как выравнивать?</span>
               <span class="unit__description" itemporp='name'>И чем мобайл для рекламщика отличается от мобайла для gродавца детских игрушек</span>
             </a>
             <!--one new-->
             <a href="#" class="unit" itemscope itemtype='http://schema.org/NewsArticle'>
               <img src="images/tmp/news-image.png" alt="image" class="unit__image" itemprop='image'>
-              <span class="unit__header">
-                <time class="unit__time" datetime="2012-12-21">21.12.2012</time>
-                <span class="unit__name" itemprop='name'>Мало</span>
-              </span>
+              <time class="unit__time" datetime="2012-12-21">21.12.2012</time>
+              <span class="unit__name" itemprop='name'>Мало</span>
               <span class="unit__description" itemporp='name'>И чем мобайл для рекламщика отличается от мобайла для gродавца детских игрушек</span>
             </a>
           </div>
@@ -151,28 +145,22 @@
             <!--one new-->
             <a href="#" class="unit" itemscope itemtype='http://schema.org/NewsArticle'>
               <img src="images/tmp/news-image.png" alt="image" class="unit__image" itemprop='image'>
-              <span class="unit__header">
-                <time class="unit__time" datetime="2012-12-21">21.12.2012</time>
-                <span class="unit__name" itemprop='name'>Название новости</span>
-              </span>
+              <time class="unit__time" datetime="2012-12-21">21.12.2012</time>
+              <span class="unit__name" itemprop='name'>Название новости</span>
               <span class="unit__description" itemporp='name'>И чем мобайл для рекламщика отличается от мобайла для gродавца детских игрушек</span>
             </a>
             <!--one new-->
             <a href="#" class="unit" itemscope itemtype='http://schema.org/NewsArticle'>
               <img src="images/tmp/news-image.png" alt="image" class="unit__image" itemprop='image'>
-              <span class="unit__header">
-                <time class="unit__time" datetime="2012-12-21">21.12.2012</time>
-                <span class="unit__name" itemprop='name'>А если текста будет много, то как выравнивать?</span>
-              </span>
+              <time class="unit__time" datetime="2012-12-21">21.12.2012</time>
+              <span class="unit__name" itemprop='name'>А если текста будет много, то как выравнивать?</span>
               <span class="unit__description" itemporp='name'>И чем мобайл для рекламщика отличается от мобайла для gродавца детских игрушек</span>
             </a>
             <!--one new-->
             <a href="#" class="unit" itemscope itemtype='http://schema.org/NewsArticle'>
               <img src="images/tmp/news-image.png" alt="image" class="unit__image" itemprop='image'>
-              <span class="unit__header">
-                <time class="unit__time" datetime="2012-12-21">21.12.2012</time>
-                <span class="unit__name" itemprop='name'>Мало</span>
-              </span>
+              <time class="unit__time" datetime="2012-12-21">21.12.2012</time>
+              <span class="unit__name" itemprop='name'>Мало</span>
               <span class="unit__description" itemporp='name'>И чем мобайл для рекламщика отличается от мобайла для gродавца детских игрушек</span>
             </a>
           </div>
@@ -232,6 +220,11 @@
             <span class="description" itemprop='description'>И чем мобайл для рекламщика отличается от мобайла для продавца детских игрушек</span>
           </span>
         </a>
+
+        <!--VK vidget-->
+        <div class="b-vidget">Вконтакте (после установки реального виджета - удалить этот блок из html)</div>
+        <!--FB vidget-->
+        <div class="b-vidget">Facebook (после установки реального виджета - удалить этот блок из html)</div>
       </aside>
       <!--end right sidebar-->
 
